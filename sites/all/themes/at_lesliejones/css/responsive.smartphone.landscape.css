@@ -1,0 +1,38 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the body font size on small devices */
+html {
+  /*font-size: 112.5%;*/
+  font-size: 108%;
+}
+
+div#zoom-img-wrapper.popup {
+display: none;
+}
+
+
+
+.gridlistbuttons .grid-c, .gridlistbuttons .grid-b, .gridlistbuttons .grid-a {
+display: none;
+}
+
+.view-photos-year select {
+float: none;
+width: 100%;
+}
+
+
+.js .region-leaderboard {
+display:none;
+}
+
+.js .slicknav_menu {
+	display:block;
+}

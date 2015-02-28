@@ -1,0 +1,378 @@
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable got to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+/*
+ * Really small screens and up
+ */
+/* @media only screen and (min-width: 220px) {} */
+/*
+ * Smartphone sizes and up
+ */
+/* @media only screen and (min-width: 320px) {} */
+/*
+ * Smartphone sizes and down
+ */
+@media only screen and (max-width: 480px) {
+  /* 
+   * Float Region blocks example:
+   * In smaller screen sizes we can remove the float and widths so all blocks
+   * stack instead of displaying horizonally. The selector used here is an
+   * "attribute selector" which will match on any float block class. Use your
+   * inspector or Firebug to get the classes from the page output if you need
+   * more granular control over block alignment and stacking.
+   * 
+   * "Float Region blocks" is an extension for floating blocks in regions, see
+   * your themes appearance settings, under the Extensions tab.
+   */
+  .region[class*="float-blocks"] .block {
+    float: none;
+    width: 100%;
+  }
+}
+/*
+ * Tablet sizes and up
+ */
+/* @media only screen and (min-width: 768px) {} */
+/*
+ * Desktops/laptops and up
+ */
+/* @media only screen and (min-width: 1025px) {} */
+
+
+@media only screen and (max-width:320px) {
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the default font size on small devices */
+html {
+  /*font-size: 112.5%;*/
+  font-size: 108%;
+}
+
+
+div#zoom-img-wrapper.popup {
+display: none;
+}
+
+
+.lj-grid-display .views-view-grid tr td {
+padding: 1px;
+border: none;
+}
+
+
+.gridlistbuttons .grid-c, .gridlistbuttons .grid-b, .gridlistbuttons .grid-a {
+display: none;
+}
+.view-photos-year select {
+float: none;
+width: 100%;
+}
+
+
+#branding {
+position: relative;
+text-align: center;
+}
+
+.region-leaderboard {
+float: none;
+text-align: center;
+}
+
+
+
+#block-system-main-menu  {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+#block-system-main-menu ul.menu {
+position: relative;
+float: left;
+left: 50%;
+}
+
+#block-system-main-menu li {
+  color: #BBBBBB;
+  float: left;
+  right: 50%;
+  position: relative; 
+  margin: 0px 1px 0px 1px; 
+  
+}
+
+#block-system-main-menu li a {
+  width: 72px;
+  padding: 3px;
+  height: 72px;
+  font-size: 1.1em;
+}
+
+
+#site-name a {
+  font-size: .7em;
+  color: #918779;
+}
+
+
+
+
+
+
+
+
+
+}
+@media only screen and (min-width:321px) and (max-width:480px) {
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the body font size on small devices */
+html {
+  /*font-size: 112.5%;*/
+  font-size: 108%;
+}
+
+div#zoom-img-wrapper.popup {
+display: none;
+}
+
+
+.lj-grid-display .views-view-grid tr td {
+padding: 1px;
+border: none;
+margin: 0;
+}
+
+
+
+
+.gridlistbuttons .grid-c, .gridlistbuttons .grid-b, .gridlistbuttons .grid-a {
+display: none;
+}
+.view-photos-year select {
+float: none;
+width: 100%;
+}
+
+
+
+
+
+
+#bpl_studio .bpl_studio_section img {
+width: 100%;
+float: left;
+display: inline-block;
+padding: 0 2% 2% 0;
+}
+
+
+
+#branding {
+position: relative;
+text-align: center;
+}
+
+.region-leaderboard {
+float: none;
+text-align: center;
+}
+
+
+
+
+#block-system-main-menu  {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+#block-system-main-menu ul.menu {
+position: relative;
+float: left;
+left: 50%;
+}
+
+#block-system-main-menu li {
+  color: #BBBBBB;
+  float: left;
+  right: 50%;
+  position: relative; 
+  margin: 0px 2px 0px 2px; 
+}
+
+
+#block-system-main-menu li a {
+  width: 72px;
+  padding: 3px;
+  height: 72px;
+  font-size: 1.1em;
+}
+
+#site-name a {
+  font-size: .7em;
+  color: #918779;
+}
+}
+@media only screen and (min-width:481px) and (max-width:768px) {
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the body font size on small devices */
+html {
+  font-size: 81.3%;
+}
+
+div#zoom-img-wrapper.popup {
+display: none;
+}
+
+
+
+#branding {
+position: relative;
+text-align: center;
+}
+
+.region-leaderboard {
+float: none;
+text-align: center;
+}
+
+.gridlistbuttons .grid-c {
+display: none;
+}
+
+
+#block-system-main-menu  {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+#block-system-main-menu ul.menu {
+position: relative;
+float: left;
+left: 50%;
+}
+
+#block-system-main-menu li {
+  color: #BBBBBB;
+  float: left;
+  right: 50%;
+  position: relative;
+  margin: 0px 5px 0px 5px; 
+}
+
+#block-system-main-menu li a {
+  padding: 3px;
+  width: 93px;
+}
+
+
+
+
+
+}
+@media only screen and (min-width:769px) and (max-width:1024px) {
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete 
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+
+#branding {
+position: relative;
+text-align: center;
+}
+
+.region-leaderboard {
+float: none;
+text-align: center;
+}
+
+.gridlistbuttons .grid-c {
+display: none;
+}
+
+#block-system-main-menu  {
+position: relative;
+width: 100%;
+overflow: hidden;
+}
+
+#block-system-main-menu ul.menu {
+position: relative;
+float: left;
+left: 50%;
+}
+
+#block-system-main-menu li {
+  color: #BBBBBB;
+  float: left;
+  right: 50%;
+  position: relative; 
+  display: inline;
+  margin: 0px 5px 0px 5px; 
+}
+
+#block-system-main-menu li a {
+ width: 165px;
+  padding: 2px;
+ 
+}
+}
+@media only screen and (min-width:1025px) {
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+
+
+
+
+
+
+
+}
